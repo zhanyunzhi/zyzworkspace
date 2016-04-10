@@ -1,8 +1,10 @@
 <?php
 date_default_timezone_set('PRC');
-$mysqli = new mysqli("119.145.141.134", "root", "yzwl89923009", "showhealthy",123);
+//$mysqli = new mysqli("119.145.141.134", "root", "yzwl89923009", "showhealthy",123);
+$mysqli = new mysqli("localhost", "root", "", "yangtuo");
 $mysqli->query("SET NAMES utf8");
-$system_base ="http://wx.yzwltech.com/showstorebao/";	
+//$system_base ="http://wx.yzwltech.com/showstorebao/";
+$system_base ="http://192.168.1.4:8088/yangtuo/dir/";
 $check_key="!QAcfl0c9J8i10l8";
 if ($mysqli->connect_errno) {				
 	 die("数据库链接错误！");
